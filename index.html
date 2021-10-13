@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/records.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <script src="main.js" defer></script>
+  <title>crud</title>
+</head>
+<body>
+  <header>
+    <h1 class="header-title">Cadastro de Clientes</h1>
+  </header>
+
+  <main>
+    <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+    <table id="tableClient" class="records">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Celular</th>
+          <th>Endereço</th>
+          <th>Ação</th>
+        </tr>
+        <tbody>
+          <!--aqui entrarao as informações criadas no js-->
+        </tbody>
+      </thead>
+    </table>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h2>Novo Cliente</h2>
+          <span class="modal-close" id="modalClose">&#10006;</span>
+        </header>
+        <form id="form" class="modal-form">
+          <input id="nome" name="name" type="text" class="modal-field" data-index="new" placeholder="Nome" required>
+          <input id="email" name="email" type="email" class="modal-field" data-index="new" placeholder="Email" required>
+          <input id="telefone" name="tel" type="rext" class="modal-field" data-index="new" placeholder="Celular" required>
+          <input id="endereco" name="endereco" type="text" class="modal-field" data-index="new" placeholder="Endereço" required>
+          
+        </form>
+        <footer class="modal-footer">
+          <button id="salvar" class="button green">Salvar</button>
+          <button id="cancelar" type="reset" class="button blue">Cancelar</button>
+        </footer>
+      </div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <div class="redes-sociais">
+      <a href="https://github.com/LeoScripts" target="blanck"><img src="https://img.icons8.com/nolan/64/github.png" alt="github"></a>
+      <a href="https://www.linkedin.com/in/leoscripts/" target="blanck"><img src="https://img.icons8.com/nolan/64/linkedin-circled.png" alt="linkedin"></a>
+      <a  href="mailto:leandroguitarjesus89@gmail.com"><img src="https://img.icons8.com/nolan/64/google-plus.png" alt="gmail"></a>
+  </div>
+    Copyring &copy; Leandro Cavalcante
+  </footer>
+  
+</body>
+</html>
